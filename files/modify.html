@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="text-bg-dark">
+
+    <nav class="navbar navbar-expand-lg bg-secondary py-3">
+        <div class="container-lg">
+            <a href="./main.html" class="navbar-brand me-auto fs-1">Assign App</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown fs-4"><a class="nav-link" href="./main.html">Main</a></li>
+                    <li class="nav-item dropdown fs-4"><a class="nav-link" href="./modify.html">Modify</a></li>
+                    <li class="nav-item dropdown fs-4"><a class="nav-link" href="./assign.html">Assign</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Save a person</legend>
+                    <div>
+                        <label for="firstname">firstname:</label>
+                        <input type="text" name="firstname" id="firstname" required maxlength="20">
+                    </div>
+                    <div>
+                        <label for="lastname">lastname:</label>
+                        <input type="text" name="lastname" id="lastname" required maxlength="20">
+                    </div>
+                    <div>
+                        <label for="category"> category: </label>
+                        <input type="text" name="category" id="category" required maxlength="30">
+                    </div>
+                    <div>
+                        <label for="personID">personID:</label>
+                        <input type="text" name="personID" id="personID" required maxlength="10">
+                    </div>
+                    <div class="row-1">
+                        <button class="btnSubmit" value="insert">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Delete a person</legend>
+                    <label for="personID-2">personID:</label>
+                    <input type="text" name="personID-2" id="personID-2" required maxlength="10">
+                    <div class="row-2">
+                        <button class="btnDelete" value="delete">Delete</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Save a job</legend>
+                    <div>
+                        <label for="name">jobname:</label>
+                        <input type="text" name="name" id="name" required maxlength="20">
+                    </div>
+                    <div>
+                        <label for="category-3">category:</label>
+                        <input type="text" name="category-3" id="category-3" required maxlength="30">
+                    </div>
+                    <div class="row-3">
+                        <button class="btnSubmit-3" value="insert">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+ 
+    
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Delete a job</legend>
+                    <label for="name-1">jobname:</label>
+                    <input type="text" name="name-1" id="name-1" required maxlength="20">
+                    <div class="row-4">
+                        <button class="btnDelete-2" value="delete-2">Delete</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./persons.script.js"></script>
+    <script src="./jobs.script.js"></script>
+</body>
+</html>
